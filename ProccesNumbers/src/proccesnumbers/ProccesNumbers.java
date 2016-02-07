@@ -51,6 +51,12 @@ public class ProccesNumbers {
                 min = a[i];
         System.out.print("\nSo nho nhat trong mang a la: " + min);
         System.out.print("\n");
+        
+        //tim so chan trong mang
+        for(int i=0; i<a.length; i++)
+            if(a[i]%2==0)
+                System.out.print(a[i] + " ");
+        System.out.print("\n");
     }
     
 }
