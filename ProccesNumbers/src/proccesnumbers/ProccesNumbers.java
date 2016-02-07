@@ -16,7 +16,7 @@ public class ProccesNumbers {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int[] a = {5, 9, 4, 12, 32, 1, 0};   
+        int[] a = {5, 9, 4, 12, 32, 1, 189, 155};   
        
         System.out.println("So phan tu trong mang a la: " + a.length);        
         
@@ -41,7 +41,15 @@ public class ProccesNumbers {
             if(max<a[i])
                 max=a[i];
             
-        System.out.print("\nSo lon nhat trong mang a la:" + max);
+        System.out.print("\nSo lon nhat trong mang a la: " + max);
+        System.out.print("\n");
+        
+        //tim gia tri nho nhat trong mang
+        int min = a[0];
+        for(int i=0; i<a.length; i++)
+            if(min>a[i])
+                min = a[i];
+        System.out.print("\nSo nho nhat trong mang a la: " + min);
         System.out.print("\n");
     }
     
