@@ -16,11 +16,25 @@ public class ProccesNumbers {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int[] a = {5, 9, 4, 12, 32, 1, 0};
+        int[] a = {5, 9, 4, 12, 32, 1, 0};   
+       
+        System.out.println("So phan tu trong mang a la: " + a.length);        
         
-        System.out.println("So phan tu trong mang a la: " + a.length);
-        for(int i=0; i<a.length;i++)   
-            System.out.print(a[i] + "\n");
+        int temp;
+        
+        for(int j=0; j<a.length; j++)
+            for(int i=a.length-1;i>j; i--)
+                if(a[i]<a[i-1])
+                {                 
+                    temp = a[i];
+                    a[i]=a[i-1];
+                    a[i-1]=temp;
+                }
+                
+         for(int i=0; i<a.length;i++)         
+            System.out.print(a[i] + " ");            
+        System.out.print("\n");
+        
     }
     
 }
