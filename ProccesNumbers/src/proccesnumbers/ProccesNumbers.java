@@ -31,10 +31,18 @@ public class ProccesNumbers {
                     a[i-1]=temp;
                 }
                 
-         for(int i=0; i<a.length;i++)         
+        for(int i=0; i<a.length;i++)         
             System.out.print(a[i] + " ");            
         System.out.print("\n");
         
+        //tim gia tri max trong mang
+        int max = a[0];
+        for(int i=0; i<a.length; i++)        
+            if(max<a[i])
+                max=a[i];
+            
+        System.out.print("\nSo lon nhat trong mang a la:" + max);
+        System.out.print("\n");
     }
     
 }
