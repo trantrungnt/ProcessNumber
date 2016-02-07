@@ -19,6 +19,8 @@ public class ProccesNumbers {
         int[] a = {5, 9, 4, 12, 32, 1, 0};
         
         System.out.println("So phan tu trong mang a la: " + a.length);
+        for(int i=0; i<a.length;i++)   
+            System.out.print(a[i] + "\n");
     }
     
 }
