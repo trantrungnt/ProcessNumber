@@ -71,6 +71,15 @@ public class ProccesNumbers {
             if(a[i]%2!=0)                        
                 System.out.print(a[i]*a[i] + " ");
        System.out.print("\n");
+       
+       
+       //tinh tong binh phuong cac so le trong mang
+       int sum=0;
+       for(int i=0; i<a.length; i++)
+           if(a[i]%2!=0)
+               sum = a[i]*a[i] + sum;
+       System.out.print("\nTong binh phuong cac so le trong mang la: " + sum);
+       System.out.println();
     }
     
 }
