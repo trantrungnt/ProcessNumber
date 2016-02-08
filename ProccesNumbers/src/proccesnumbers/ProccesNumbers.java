@@ -65,6 +65,12 @@ public class ProccesNumbers {
                 tmp = a[i] + tmp;                
         System.out.print("\nTong cac so chan trong mang la: " + tmp);
         System.out.print("\n");
+        
+        //tinh binh phuong cac so le trong mang                
+        for(int i=0; i<a.length; i++)
+            if(a[i]%2!=0)                        
+                System.out.print(a[i]*a[i] + " ");
+       System.out.print("\n");
     }
     
 }
