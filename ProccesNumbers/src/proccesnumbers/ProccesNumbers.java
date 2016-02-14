@@ -16,7 +16,7 @@ public class ProccesNumbers {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int[] a = {5, 9, 4, 12, 32, 1, 189, 155};   
+        int[] a = {5, 9, 4, 12, 32, 1, 160, 155};   
        
         System.out.println("So phan tu trong mang a la: " + a.length);        
         
@@ -80,6 +80,19 @@ public class ProccesNumbers {
                sum = a[i]*a[i] + sum;
        System.out.print("\nTong binh phuong cac so le trong mang la: " + sum);
        System.out.println();
+       
+       //tinh giai thua cua cac so co trong mang
+      System.out.print("\nGiai thua cua moi phan tu co trong mang la: ");
+      for(int i=0; i<a.length; i++)
+          System.out.print(GiaiThua(a[i]) + "  || ");
+      System.out.println();
     }
     
+    static double GiaiThua(double x)
+    {
+        if(x==0)
+            return 1;
+        
+        return x*GiaiThua(x-1);
+    }
 }
