@@ -20,8 +20,8 @@ public class ProccesNumbers {
        
         System.out.println("So phan tu trong mang a la: " + a.length);        
         
-        int temp;
-        
+        //Sap xep mang
+        int temp;        
         for(int j=0; j<a.length; j++)
             for(int i=a.length-1;i>j; i--)
                 if(a[i]<a[i-1])
@@ -88,6 +88,7 @@ public class ProccesNumbers {
       System.out.println();
     }
     
+    //Ham tinh Giai thua
     static double GiaiThua(double x)
     {
         if(x==0)
